@@ -1,0 +1,86 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(105, 168, 232, 1) 0%, rgb(240, 86, 99) 100%);
+    font-family: Helvetica;
+}
+.topic-content{
+    display: inline-block;
+    margin-left: 45px;
+}
+.stack-image{
+    display: inline-block;
+    position: relative;
+}
+.stack-image img{
+    position: absolute;
+}
+.major-topic{
+    background: rgba(251, 251, 251, 0.037);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 12px;
+    padding-top: 10px;
+    width: 95%;
+}
+.content{
+    height: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.blur{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 82%;
+    background: rgba(182, 174, 174, 0.515);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 25px;
+    padding: 1rem 2rem;
+}
+header{
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1.2fr 3fr;
+}
+.img1{
+    left: 5rem;
+    top: 1rem;
+    border-radius: 8px;
+}
+.img2{
+    left: 19rem;
+    top: 9.5rem;
+    border-radius: 8px;
+}
+.img3{
+    left: 36rem;
+    top: 4rem;
+    border-radius: 8px;
+}
+.icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    border-radius: 5px;
+}
+button{
+    border-radius: 5px;
+}
+.center{
+    text-align: center;
+}
+.mini{
+    padding-left: 20px;
+}
+.zoom {
+    transition: transform .2s;/* animation 0.2s */
+}
+  
+.zoom:hover {
+    transform: scale(1.1); /* (115% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background: rgba(255, 47, 47, 0.555);
+    backdrop-filter: saturate(180%) blur(1px);
+    padding: 10px;
+  }
